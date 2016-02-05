@@ -10,13 +10,18 @@ p{
 
 a{
 	font-weight: 400;
-	text-decoration: none;
-	color: teal;
+	text-decoration: none !important;
+	color: #800020;
+}
+a:hover{
+	font-weight: 600;
+	color: #800020 !important;
 }
 
 .top_bar{
 	height: 10%;
 	width: 100%;
+	padding-top: 1em;
 	background: white;
 	position: absolute;
 	display: block;
@@ -34,7 +39,7 @@ a{
 
 .content{
 	width: 100%;
-	height: 90%;
+	height: 80%;
 	overflow-y: scroll;
 	top: 10%;
 	position: absolute;
@@ -42,7 +47,7 @@ a{
 }
 
 .row{
-	height: 45%;
+	height: 50%;
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
@@ -76,11 +81,8 @@ a{
 div#top{
 	padding-top: 1em;
 	padding-bottom: 1em;
-	width:50%;
+	width:60%;
 	height: auto;
-}
-div#bottom{
-	padding-bottom: 12%;
 }
 
 .row-text{
@@ -111,9 +113,16 @@ iframe#player{
 .nav_img{
 	position: absolute;
 	display: block;
-	padding-top: 1.5%;
 	height: 45%;
 	max-height: 100%
+}
+
+.request-form{
+	padding-top: 10px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 img#request{
@@ -132,4 +141,9 @@ img#title{
 	padding-right: 2em;
 	bottom: 0px;
 	padding-bottom: 1.5%;
+}
+
+button.btn.btn-primary{
+	background-color: #800020;
+	border-color: #800020;
 }

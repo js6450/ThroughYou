@@ -1,24 +1,59 @@
 <html>
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
 
-	<title>Through You, into Your Arms</title>
-	<head>
-		<link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300italic,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>	
-	</head>
-	<body>
+  <title>From Stranger, With Love.</title>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300italic,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  </head>
+  <body>
     <div class="top_bar">
-  		<a href="request.html"><img id="request" class="nav_img" src="img/request.png"></a>
-  		<a href="watch.html"><img id="watch" class="nav_img" src="img/watch.png"></a>
-  		<a href="writers.html"><img id="writers" class="nav_img" src="img/writers.png"></a>
+      <a href="request.html"><img id="request" class="nav_img" src="img/request.png"></a>
+      <a href="watch.html"><img id="watch" class="nav_img" src="img/watch.png"></a>
+      <a href="writers.html"><img id="writers" class="nav_img" src="img/writers.png"></a>
     </div>
     <div class="content">
-
-    </div>
-    <div class="bottom_bar">
-      <a href="index.html"><img id="title" class="nav_img" src="img/proj_name.png"></a>
-    </div>
-
-	</body>
+      <form class="request-form">
+        <fieldset class="form-group">
+          <label for="sender">Your Name:</label>
+          <input type="text" class="form-control" id="sender" placeholder="who is sending it?">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="receiver">Recipient's Name:</label>
+          <input type="text" class="form-control" id="receiver" placeholder="who are you sending it to?">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="addr">Recipient's Address:</label>
+          <input type="text" class="form-control" id="addr" placeholder="Please enter it correctly (if you want the postcard to be correctly sent).">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="writer"><a href="writers.html">Writer</a> of your postcard</label>
+          <select class="form-control" id="writer">
+            <option value="0">Allysa</option>
+            <option value="1">Angela</option>
+            <option value="2">Batu</option>
+            <option value="3">Faizan</option>
+            <option value="4">Grega</option>
+            <option value="5">Jiwon</option>
+            <option value="6">Leo</option>
+            <option value="7">Shoya</option>
+            <option value="8">Paula</option>
+            <option value="9">Paula</option>        
+            <option value="10">Willem</option>
+          </select>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="addinfo">Additional Information:</label>
+          <small class="text-muted">
+          Include any additional information you would like to tell your writer about the content of the postcard.
+          </small>
+          <textarea class="form-control" id="addinfo" rows="3"></textarea>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </body>
 
 </html>
