@@ -1,0 +1,61 @@
+<html>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+
+	<title>From Stranger, With Love.</title>
+	<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+    <script src="http://malsup.github.com/jquery.form.js"></script> 
+		<link rel="stylesheet" href="css/style.css">	
+	</head>
+
+
+	<body>
+
+
+    <div class="bottom_bar">
+      <a href="index.html"><img id="title" class="nav_img" src="img/proj_name.png"></a>
+    </div>
+
+    <form  id="emailForm">
+      Name:<br>
+      <input type="text" id="name" name="name"><br>
+      Mail:<br>
+      <input type="textarea" id="content" name="postcard" rows="10" cols="30">
+      <br>
+      <select id = "writer">
+        <option value="Allysa">Allysa</option>
+        <option value="Angela">Angela</option>
+        <option value="Batu">Batu</option>
+        <option value="Faizan">Faizan</option>
+        <option value="Grega">Grega</option>
+        <option value="Jiwon">Jiwon</option>
+        <option value="Leo">Leo</option>
+        <option value="Shoya">Shoya</option>
+        <option value="Paula">Paula</option>
+        <option value="Willem">Willem</option>
+      </select>
+      
+      <br>
+      <br>
+      
+      <input type="submit" value="Send">
+
+    </form>
+
+    <script> 
+        // wait for the DOM to be loaded 
+        $(document).ready(function() { 
+            // bind 'myForm' and provide a simple callback function 
+
+            var emails = ["jiwon.fromstranger@gmail.com",'paula.fromstranger@gmail.com','leo.fromstranger@gmail.com','sofia.fromstranger@gmail.com','faiza.fromstranger@gmail.com','alyssa.fromstranger@gmail.com']
+
+            $('#emailForm').ajaxForm(function() { 
+
+                
+            }); 
+        }); 
+    </script> 
+
+	</body>
+
+</html>
