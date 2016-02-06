@@ -8,6 +8,7 @@
         $receiver = strip_tags(trim($_POST["receiver"]));
         $address = $_POST['addr'];
         $writer = $_POST['writer'];
+        $relationship = $_POST['relationship'];
         $emailList = array('alyssa.fromstranger@gmail.com', 'angela.fromstranger@gmail.com', 'batu.fromstranger@gmail.com',
             'faizan.fromstranger@gmail.com','grega.fromstranger@gmail.com','jiwon.fromstranger@gmail.com',
             'leo.fromstranger@gmail.com','shoya.fromstranter@gmail.com','paula.fromstranger@gmail.com',
@@ -37,6 +38,7 @@
         // Build the email content.
         $email_content = "Senders Name: $sender\n";
         $email_content .= "Recepients Name: $receiver\n";
+        $email_content .= "Relationship: $relationship\n";
         $email_content .= "Language: $language\n";
         $email_content .= "Address: $address\n\n";
         $email_content .= "Message:\n$message\n";
