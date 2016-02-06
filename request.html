@@ -1,5 +1,7 @@
 <html>
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
 
   <title>From Stranger, With Love.</title>
   <head>
@@ -32,7 +34,7 @@
         <fieldset class="form-group">
           <label for="writer"><a href="writers.html">Writer</a> of your postcard</label>
           <select class="form-control" id="writer">
-            <option value="0">Allysa</option>
+            <option value="0">Alyssa</option>
             <option value="1">Angela</option>
             <option value="2">Batu</option>
             <option value="3">Faizan</option>
@@ -41,8 +43,13 @@
             <option value="6">Leo</option>
             <option value="7">Shoya</option>
             <option value="8">Paula</option>
-            <option value="9">Paula</option>        
+            <option value="9">Sofia</option>        
             <option value="10">Willem</option>
+          </select>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="lang">Language</label>
+          <select class="form-control" id="lang">
           </select>
         </fieldset>
         <fieldset class="form-group">
@@ -59,5 +66,24 @@
       <a href="index.html"><img id="title" class="nav_img" src="img/proj_name.png"></a>
     </div>
   </body>
+  <script>
+    var langs = [["English", "Tagalog"], ["English", "Spanish"], ["English", "Turkish"], ["English", "Urdu"], ["English", "French", "Slovenian", "Bosnian"],["English", "Korean"], ["English", "Georgian"], ["English", "Hungarian"], ["English", "Russian", "Romanian"], ["English", "Spanish", "Portuguese"], ["English", "Dutch"]];
+    var iwriter = $('#writer').val();
+    var langform = "";
+      for(i = 0; i < langs[iwriter].length; i++){
+        langform += "<option value='" + langs[iwriter][i] + "'>" + langs[iwriter][i] + "</option>";
+      }
+    console.log(langform);
+    document.getElementById("lang").innerHTML = langform;
+    $('#writer').change(function(event){
+      var iwriter = $('#writer').val();
+      var langform = "";
+      for(i = 0; i < langs[iwriter].length; i++){
+        langform += "<option value='" + langs[iwriter][i] + "'>" + langs[iwriter][i] + "</option>";
+      }
+      console.log(langform);
+      document.getElementById("lang").innerHTML = langform;
+    });
+    </script>
 
 </html>
