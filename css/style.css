@@ -85,10 +85,6 @@ div#top{
 	height: auto !important;
 }
 
-div#bottom{
-	margin-bottom: 2em;
-}
-
 .row-text{
 	position: relative;
 	width: 70%;
@@ -151,7 +147,7 @@ img#title{
 button.btn.btn-primary{
 	background-color: #800020;
 	border-color: #800020;
-	margin-bottom: 2em !important;
+	margin-bottom: 2rem !important;
 }
 
 @media only screen and (min-width: 751px){

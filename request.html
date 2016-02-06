@@ -29,6 +29,10 @@
           <input type="text" class="form-control" id="receiver" name = 'receiver' placeholder="who are you sending it to?">
         </fieldset>
         <fieldset class="form-group">
+          <label for="receiver">Your relationship with the Recipient:</label>
+          <input type="text" class="form-control" id="relationship" placeholder="Parent? Lover? Friend?">
+        </fieldset>
+        <fieldset class="form-group">
           <label for="addr">Recipient's Address:</label>
           <input type="text" class="form-control" id="addr"  name = 'addr' placeholder="Please enter it correctly (if you want the postcard to be correctly sent).">
         </fieldset>
@@ -80,7 +84,6 @@
       for(i = 0; i < langs[iwriter].length; i++){
         langform += "<option value='" + langs[iwriter][i] + "'>" + langs[iwriter][i] + "</option>";
       }
-    console.log(langform);
     document.getElementById("lang").innerHTML = langform;
     $('#writer').change(function(event){
       var iwriter = $('#writer').val();
@@ -88,7 +91,6 @@
       for(i = 0; i < langs[iwriter].length; i++){
         langform += "<option value='" + langs[iwriter][i] + "'>" + langs[iwriter][i] + "</option>";
       }
-      console.log(langform);
       document.getElementById("lang").innerHTML = langform;
     });
     </script>
