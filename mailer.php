@@ -55,7 +55,7 @@
             // Set a 200 (okay) response code.
             http_response_code(200);
             //echo "Thank You! Your message has been sent.";
-            header("Location: http://fromstrangerwithlove.com/thankyou.html/");
+            header("Location: http://fromstrangerwithlove.com/thankyou.html");
             die();
         } else {
             // Set a 500 (internal server error) response code.
