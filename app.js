@@ -18,19 +18,7 @@ $(function() {
 			data: formData
 		})
 		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
-			$(formMessages).removeClass('error');
-			$(formMessages).addClass('success');
-
-			// Set the message text.
-			$(formMessages).text(response);
-
-			console.log("I am in success.");
-
-			// Clear the form.
-			$('#name').val('');
-			$('#email').val('');
-			$('#message').val('');
+			alert("Thank you! Your postcard has been requested!");
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.

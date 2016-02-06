@@ -22,11 +22,11 @@
       <form class="request-form" id="ajax-contact" method="post" action="mailer.php" >
         <fieldset class="form-group">
           <label for="sender">Your Name:</label>
-          <input type="text" class="form-control" id="sender" name = 'sender' placeholder="who is sending it?">
+          <input type="text" class="form-control" id="sender" name = 'sender' placeholder="who is sending it?" required>
         </fieldset>
         <fieldset class="form-group">
           <label for="receiver">Recipient's Name:</label>
-          <input type="text" class="form-control" id="receiver" name = 'receiver' placeholder="who are you sending it to?">
+          <input type="text" class="form-control" id="receiver" name = 'receiver' placeholder="who are you sending it to?" required>
         </fieldset>
         <fieldset class="form-group">
           <label for="receiver">Your relationship with the Recipient:</label>
@@ -34,7 +34,18 @@
         </fieldset>
         <fieldset class="form-group">
           <label for="addr">Recipient's Address:</label>
-          <input type="text" class="form-control" id="addr"  name = 'addr' placeholder="Please enter it correctly (if you want the postcard to be correctly sent).">
+          <input type="text" class="form-control" id="addr"  name = 'addr' placeholder="Please enter it correctly (if you want the postcard to be correctly sent)." required>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="occ">What's the occasion?</label>
+          <input type="text" class="form-control" id="occ"  name = 'occ' placeholder="Why do you want to send this person a postcard? For fun? To say hi? To celebrate something?">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="news">What's new in your life?</label>
+          <small class="text-muted">
+          Tell use something new and exciting that happened to you recently. Did you get a new haircut? A new cat?
+          </small>
+          <textarea class="form-control" id="news" rows="3" name = "news"></textarea>
         </fieldset>
         <fieldset class="form-group">
           <label for="writer"><a href="writers.html">Writer</a> of your postcard</label>
