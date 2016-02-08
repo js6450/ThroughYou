@@ -11,8 +11,8 @@
         $writer = $_POST['writer'];
         $relationship = $_POST['relationship'];
         $emailList = array('alyssa.fromstranger@gmail.com', 'angela.fromstranger@gmail.com', 'batu.fromstranger@gmail.com',
-            'faizan.fromstranger@gmail.com','grega.fromstranger@gmail.com','jiwon.fromstranger@gmail.com',
-            'leo.fromstranger@gmail.com','shoya.fromstranter@gmail.com','paula.fromstranger@gmail.com',
+            'faizan.fromstranger@gmail.com','grega.fromstranger@gmail.com','jiwon.fromstranger@gmail.com', 'joey.fromstranger@gmail.com',
+            'leo.fromstranger@gmail.com','shoya.fromstranger@gmail.com','paula.fromstranger@gmail.com',
             'sofia.fromstranger@gmail.com','willem.fromstranger@gmail.com');
         
         $writerEmail = $emailList[$writer];
